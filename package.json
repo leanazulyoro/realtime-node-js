@@ -1,0 +1,21 @@
+{
+  "author": {
+    "name": "lalmeida"
+  },
+  "name": "realtime-nodejs",
+  "description": "Realtime push of new content to clients",
+  "version": "0.8.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leanazulyoro/realtime-node-js"
+  },
+  "dependencies" : {
+    "dnode"   :  ">= 0.8.0",
+    "now"   :  ">= 0.8.1",
+    "forever"	: ">= 0.10.0"
+  },
+  "main": "lib/server.js",
+  "engines": {
+    "node": ">= v0.4.0"
+  }
+}
