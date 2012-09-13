@@ -1,22 +1,29 @@
-realtime-node-js
-================
-
-PHP to node.js interactions and exchange of data in realtime
-
-
-INSTALL DEPENDENCIES:
------------------------
+----------------------------------
+Realtime for Node.js allows an stream of data to be shared in real-time from the server to 
+all watching clients, and viceversa.
+-----------------------------------
 
 Prerequisites:
-For nodejs_realtime to work, you need node.js and npm installed in the server
+For realtime-node-js to work, you need node.js (nodejs.org) and npm (comes with node.js) installed in the server
 
-1. Install dependencies:
-$ cd /path/to/realtime
+Download realtime-node-js from https://github.com/leanazulyoro/realtime-node-js
+You can download the zipball, or use git to clone:
+$ git clone https://github.com/leanazulyoro/realtime-node-js.git
+
+Install dependencies:
+$ cd /path/to/realtime-node-js
 $ npm install
 
-2. Compose dnode-php:
-$ cd /path/to/realtime/node_modules/dnode-php
-$ php composer.phar install
+The "node_modules" directory is created with the following modules in it:
+- dnode
+- forever
+- now
+
+Finally you need to start the service:
+$ node lib/server.js
+
+If you want to run it as a daemon, you may use provided "forever" module:
+$ /path/to/realtime-node-js/node_modules/forever/bin/forever start /path/to/realtime-node-js/lib/server.js
 
 
 
